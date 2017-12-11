@@ -17,6 +17,15 @@
 		35D3108F1FDE17B30025721A /* env.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35D3108E1FDE17B30025721A /* env.jpg */; };
 		35D310911FDE1A0E0025721A /* ConsoleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D310901FDE1A0E0025721A /* ConsoleTextField.swift */; };
 		35D310931FDE1A3D0025721A /* VT323-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35D310921FDE1A3D0025721A /* VT323-Regular.ttf */; };
+		35D310CD1FDF10440025721A /* cash1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310C61FDF10430025721A /* cash1.png */; };
+		35D310CE1FDF10440025721A /* cash6.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310C71FDF10440025721A /* cash6.png */; };
+		35D310CF1FDF10440025721A /* cash7.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310C81FDF10440025721A /* cash7.png */; };
+		35D310D01FDF10440025721A /* cash2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310C91FDF10440025721A /* cash2.png */; };
+		35D310D11FDF10440025721A /* cash4.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310CA1FDF10440025721A /* cash4.png */; };
+		35D310D21FDF10440025721A /* cash3.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310CB1FDF10440025721A /* cash3.png */; };
+		35D310D31FDF10440025721A /* cash5.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310CC1FDF10440025721A /* cash5.png */; };
+		35D310DF1FDF26EE0025721A /* predicting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310DD1FDF26EE0025721A /* predicting@3x.png */; };
+		35D310E01FDF26EE0025721A /* prediction@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D310DE1FDF26EE0025721A /* prediction@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +41,15 @@
 		35D3108E1FDE17B30025721A /* env.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = env.jpg; sourceTree = "<group>"; };
 		35D310901FDE1A0E0025721A /* ConsoleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleTextField.swift; sourceTree = "<group>"; };
 		35D310921FDE1A3D0025721A /* VT323-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VT323-Regular.ttf"; sourceTree = "<group>"; };
+		35D310C61FDF10430025721A /* cash1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash1.png; sourceTree = "<group>"; };
+		35D310C71FDF10440025721A /* cash6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash6.png; sourceTree = "<group>"; };
+		35D310C81FDF10440025721A /* cash7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash7.png; sourceTree = "<group>"; };
+		35D310C91FDF10440025721A /* cash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash2.png; sourceTree = "<group>"; };
+		35D310CA1FDF10440025721A /* cash4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash4.png; sourceTree = "<group>"; };
+		35D310CB1FDF10440025721A /* cash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash3.png; sourceTree = "<group>"; };
+		35D310CC1FDF10440025721A /* cash5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash5.png; sourceTree = "<group>"; };
+		35D310DD1FDF26EE0025721A /* predicting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "predicting@3x.png"; sourceTree = "<group>"; };
+		35D310DE1FDF26EE0025721A /* prediction@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prediction@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +86,10 @@
 				35D310921FDE1A3D0025721A /* VT323-Regular.ttf */,
 				35D3107A1FDE01920025721A /* art.scnassets */,
 				35D3107C1FDE01920025721A /* ViewController.swift */,
+				35D310D41FDF10490025721A /* cashsprites */,
 				35D3108C1FDE024C0025721A /* FaceFilter.swift */,
+				35D310DD1FDF26EE0025721A /* predicting@3x.png */,
+				35D310DE1FDF26EE0025721A /* prediction@3x.png */,
 				35D310901FDE1A0E0025721A /* ConsoleTextField.swift */,
 				35D3107E1FDE01920025721A /* Main.storyboard */,
 				35D3108E1FDE17B30025721A /* env.jpg */,
@@ -77,6 +98,20 @@
 				35D310861FDE01920025721A /* Info.plist */,
 			);
 			path = Datamoji;
+			sourceTree = "<group>";
+		};
+		35D310D41FDF10490025721A /* cashsprites */ = {
+			isa = PBXGroup;
+			children = (
+				35D310C61FDF10430025721A /* cash1.png */,
+				35D310C91FDF10440025721A /* cash2.png */,
+				35D310CB1FDF10440025721A /* cash3.png */,
+				35D310CA1FDF10440025721A /* cash4.png */,
+				35D310CC1FDF10440025721A /* cash5.png */,
+				35D310C71FDF10440025721A /* cash6.png */,
+				35D310C81FDF10440025721A /* cash7.png */,
+			);
+			path = cashsprites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,10 +174,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				35D3107B1FDE01920025721A /* art.scnassets in Resources */,
+				35D310D01FDF10440025721A /* cash2.png in Resources */,
+				35D310DF1FDF26EE0025721A /* predicting@3x.png in Resources */,
+				35D310CE1FDF10440025721A /* cash6.png in Resources */,
+				35D310CD1FDF10440025721A /* cash1.png in Resources */,
 				35D310851FDE01920025721A /* LaunchScreen.storyboard in Resources */,
 				35D310821FDE01920025721A /* Assets.xcassets in Resources */,
 				35D310801FDE01920025721A /* Main.storyboard in Resources */,
+				35D310D11FDF10440025721A /* cash4.png in Resources */,
 				35D310931FDE1A3D0025721A /* VT323-Regular.ttf in Resources */,
+				35D310CF1FDF10440025721A /* cash7.png in Resources */,
+				35D310D31FDF10440025721A /* cash5.png in Resources */,
+				35D310D21FDF10440025721A /* cash3.png in Resources */,
+				35D310E01FDF26EE0025721A /* prediction@3x.png in Resources */,
 				35D3108F1FDE17B30025721A /* env.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

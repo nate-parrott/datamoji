@@ -13,7 +13,8 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
-    @IBOutlet var console: ConsoleTextField!
+    @IBOutlet var loadingLabel: UIView!
+    @IBOutlet var resultLabel: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,30 +33,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         sceneView.scene.physicsWorld.speed = 1
-        // sceneView.debugOptions.formUnion(.showPhysicsShapes)
-        // sceneView.debugOptions.formUnion(.showPhysicsFields)
         
-//        console.addLine("Initializing...")
-//        console.addLine("Computing political\npreferences...")
-//        console.addLine("Location:\nProvidence, RI")
-//        console.addLine("News affinities:")
-//        console.addLine("MSNBC + 20%")
-//        console.addLine("Fox -11%")
-//        console.addLine("CNN +18%")
-//        console.addLine("Breitbart -11%")
-//        console.addLine("NYTimes: +22%")
-//        console.addLine("WSJ: +2%")
-//        console.addLine("Collecting relevant sources...")
-//        console.addLine("\n\n\n")
-//        console.addLine("Predicting political preferences...")
-//        console.addLine("Collecting relevant sources...")
-//        console.addLine("Curating content...")
-//        console.addLinesToClearScreen()
+        resultLabel.alpha = 0
+        resultLabel.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         
-//        console.emptyCallback = {
-//            self.console.emptyCallback = nil
-//            self.faceFilter!.setup()
-//        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.loadingLabel.alpha = 0
+                self.resultLabel.alpha = 1
+            })
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.1, options: [], animations: {
+                self.resultLabel.transform = CGAffineTransform.identity
+            }, completion: nil)
+            (self.faceFilter! as! GlassesFilter).show()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
