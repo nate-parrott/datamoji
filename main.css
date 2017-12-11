@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|VT323');
+
+html, body {
+	margin: 0;
+	font-family: "Anonymous Pro";
+	line-height: 1.3;
+	background-color: #222;
+	color: rgba(255,255,255,0.9);
+}
+
+header {
+	height: 100vh;
+	font-size: 2em;
+}
+
+header, .filter {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+header > *, .filter > * {
+	flex-grow: 1;
+	flex-basis: 0;
+	flex-shrink: 0;
+	padding: 5vw;
+}
+
+header > *:first-child {
+	flex-grow: 1.5;
+}
+
+.phone {
+	background-image: url(/phone.png);
+	background-position: 50% 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+header h1 {
+	font-family: "VT323";
+	font-size: 3em;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+
+#what {
+	background-color: #eee;
+	color: #222;
+	font-size: x-large;
+	text-align: center;
+	padding: 2em 10vw;
+}
+
+#what h2 {
+	font-family: "VT323";
+}
+
+.filter {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.filter:nth-child(2n) {
+	flex-direction: row-reverse;
+}
+
+.filter h1 {
+	font-family: "VT323";
+}
+
+.filter > *:first-child {
+	flex-grow: 1.5;
+}
+
+.filter h2 {
+	font-size: 1em;
+	opacity: 0.7;
+}
