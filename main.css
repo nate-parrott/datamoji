@@ -27,13 +27,13 @@ html, body {
 	}
 }
 
-#main {
+#main, #ending {
 	font-family: "VT323";
 	line-height: 1.1;
 	text-shadow: 0px 2px 10px rgba(200,255,255,0.6);
 }
 
-#main h2, #main h4 {
+#main h2, #main h4, #ending h2, #main i {
 	background-image: url(glitch2.gif);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5 {
 	.filter > *:last-child {
 		text-align: center;
 	}
-
+	
 /*	.filter:nth-child(2n) > *:last-child {
 		text-align: right;
 	}*/
